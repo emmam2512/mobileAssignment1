@@ -1,13 +1,14 @@
 package org.wit.MobileApp1.console.controllers
 
 import mu.KotlinLogging
+import org.wit.MobileApp1.console.models.EntryJSONStore
 import org.wit.MobileApp1.console.models.EntryMemStore
 import org.wit.MobileApp1.console.models.EntryModel
 import org.wit.MobileApp1.console.views.EntryView
 
 class EntryController {
 
-    val entrys = EntryMemStore()
+    val entrys = EntryJSONStore()
     val entryView = EntryView()
     val logger = KotlinLogging.logger {}
 

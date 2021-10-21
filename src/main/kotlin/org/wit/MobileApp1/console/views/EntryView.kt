@@ -2,6 +2,7 @@ package org.wit.MobileApp1.console.views
 
 
 import org.wit.MobileApp1.console.main.entrys
+import org.wit.MobileApp1.console.models.EntryJSONStore
 import org.wit.MobileApp1.console.models.EntryMemStore
 import org.wit.MobileApp1.console.models.EntryModel
 
@@ -30,7 +31,7 @@ class EntryView {
         return option
     }
 
-    fun listEntrys(entrys : EntryMemStore) {
+    fun listEntrys(entrys : EntryJSONStore) {
         println("List All Entrys")
         println()
         entrys.logAll()
