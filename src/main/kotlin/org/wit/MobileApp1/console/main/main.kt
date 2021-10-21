@@ -150,7 +150,7 @@ fun search(id: Long) : EntryModel? {
 }
 
 fun dummyData() {
-    entrys.add(EntryModel(1, "New York New York", "So Good They Named It Twice"))
-    entrys.add(EntryModel(2, "Ring of Kerry", "Some place in the Kingdom"))
-    entrys.add(EntryModel(3, "Waterford City", "You get great Blaas Here!!"))
+    entrys.add(EntryModel(1, "donut", "10/10/2021", "14:00","146"))
+    entrys.add(EntryModel(2, "Cake", "10/10/2021", "15:00", "450"))
+    entrys.add(EntryModel(3, "Peas", "11/10/2021", "17:00", "50"))
 }
