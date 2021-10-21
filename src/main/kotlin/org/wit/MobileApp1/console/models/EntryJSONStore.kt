@@ -8,6 +8,7 @@ import com.google.gson.reflect.TypeToken
 import mu.KotlinLogging
 
 import org.wit.MobileApp1.console.helpers.*
+import org.wit.MobileApp1.console.main.entrys
 import java.util.*
 
 private val logger = KotlinLogging.logger {}
@@ -53,6 +54,10 @@ class EntryJSONStore : EntryStore {
             foundEntry.date = Entry.date
             foundEntry.time = Entry.time
         }
+        serialize()
+    }
+    override fun delete(entry: EntryModel) {
+        Entrys.remove(entry)
         serialize()
     }
 

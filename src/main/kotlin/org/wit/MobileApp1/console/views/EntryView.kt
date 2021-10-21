@@ -20,6 +20,7 @@ class EntryView {
         println(" 2. Update Entry")
         println(" 3. List All Entrys")
         println(" 4. Search Entrys")
+        println(" 5. Delete Entrys")
         println("-1. Exit")
         println(reset)
         print("Enter Option : ")

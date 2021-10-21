@@ -39,6 +39,10 @@ class EntryMemStore : EntryStore {
             foundEntry.date = entry.date
             foundEntry.time = entry.time
         }
+
+    }
+    override fun delete(entry: EntryModel) {
+        entrys.remove(entry)
     }
 
     internal fun logAll() {

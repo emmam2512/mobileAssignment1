@@ -63,7 +63,19 @@ class EntryController {
         var foundEntry = entrys.findOne(id)
         return foundEntry
     }
+    fun delete() {
+        entryView.listEntrys(entrys)
+        var searchId = entryView.getId()
+        val aEntry = search(searchId)
 
+        if(aEntry != null) {
+            entrys.delete(aEntry)
+            println("Entry Deleted...")
+            entryView.listEntrys(entrys)
+        }
+        else
+            println("entry Not Deleted...")
+    }
     fun dummyData() {
         entrys.create(EntryModel(1, "donut", "10/10/2021", "14:00","146"))
         entrys.create(EntryModel(2, "Cake", "10/10/2021", "15:00", "450"))
@@ -79,6 +91,7 @@ class EntryController {
                 2 -> update()
                 3 -> list()
                 4 -> search()
+                5 -> delete()
                 -99 -> dummyData()
                 -1 -> println("Exiting App")
                 else -> println("Invalid Option")
