@@ -20,6 +20,7 @@ fun main(args: Array<String>) {
             2 -> updateEntry()
             3 -> listEntrys()
             4 -> searchEntry()
+            5 -> deleteEntry()
             -99 -> dummyData()
             -1 -> println("Exiting App")
             else -> println("Invalid Option")
@@ -39,6 +40,7 @@ fun menu() : Int {
     println(" 2. Update Entry")
     println(" 3. List All Entrys")
     println(" 4. Search Entrys")
+    println(" 5. Delete a Entry")
     println("-1. Exit")
     println()
     print("Enter Option : ")
@@ -153,4 +155,12 @@ fun dummyData() {
     entrys.add(EntryModel(1, "donut", "10/10/2021", "14:00","146"))
     entrys.add(EntryModel(2, "Cake", "10/10/2021", "15:00", "450"))
     entrys.add(EntryModel(3, "Peas", "11/10/2021", "17:00", "50"))
+}
+fun deleteEntry() {
+    var searchId = getId()
+    val aEntry = search(searchId)
+    entrys.remove(aEntry)
+    println("Entry has been deleted")
+
+
 }
