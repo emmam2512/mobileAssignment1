@@ -1,12 +1,5 @@
 [
   {
-    "id": -4488131603195776008,
-    "food": "GOO",
-    "date": "GHJK",
-    "time": "5678",
-    "kcal": "DFGHJK"
-  },
-  {
     "id": -5196113627674481009,
     "food": "donut",
     "date": "10/10/2021",
@@ -26,5 +19,12 @@
     "date": "11/10/2021",
     "time": "17:00",
     "kcal": "50"
+  },
+  {
+    "id": 1385503335643439716,
+    "food": "StringProperty [bean: tornadofx.ViewModel@13f744e6, value: vanilla cake]",
+    "date": "StringProperty [bean: tornadofx.ViewModel@13f744e6, value: 25/12/1999]",
+    "time": "StringProperty [bean: tornadofx.ViewModel@13f744e6, value: 15:00]",
+    "kcal": "StringProperty [bean: tornadofx.ViewModel@13f744e6, value: 600]"
   }
 ]
